@@ -1,0 +1,11 @@
+try
+        {
+           // if (!_isProductionServer) return;
+            SendLogsInEmail();
+            Log.Info("Sent logs in email to teamIt");
+        }
+        catch (Exception ex)
+        {
+
+            Log.Error("Couldn't send logs", ex);
+        }
